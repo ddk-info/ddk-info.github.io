@@ -67,7 +67,7 @@
     color: inherit;
   }
 
-  .fa-facebook, .fa-twitter, .fa-google-plus {
+  .fa-facebook, .fa-twitter, .fa-google-plus, .fa-linkedin {
     margin-top: 17px;
     font-size: 15px;
     line-height: 15px;
@@ -77,7 +77,10 @@
     -webkit-transition: all .8s ease-in-out;
     -o-transition: all .8s ease-in-out;
    }
-  .page-content-social ul li a:hover .fa-facebook, .page-content-social ul li a:hover .fa-twitter, .page-content-social ul li a:hover .fa-google-plus {
+  .page-content-social ul li a:hover .fa-facebook, 
+  .page-content-social ul li a:hover .fa-twitter, 
+  .page-content-social ul li a:hover .fa-google-plus,
+  .page-content-social ul li a:hover .fa-linkedin {
     opacity: 1;
     color: #25b5f1;
     transform: rotateY(360deg);
