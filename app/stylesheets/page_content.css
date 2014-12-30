@@ -1,0 +1,47 @@
+/*==============================================*/
+/*  Content and overlay background color        */
+/*==============================================*/
+  #page-content{
+    position: relative;
+    padding-left: 200px;
+    height: 100%;
+    font-family: "Helvetica Neue",Raleway,Helvetica,Arial,sans-serif;
+  }
+
+  #page-content section {
+    overflow: hidden;
+  }
+
+  .page-content-profile{
+    position: relative;
+  }
+
+  .page-content-profile-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .page-content-profile-bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img.too-slim {
+    width: 100%;
+    max-height: none;
+    opacity: 0.4;
+  }
+
+  .page-content-black {
+    background-color: black;
+    height: inherit;
+  }
+
+
+
+
+

@@ -1,0 +1,196 @@
+/*==============================================*/
+/*  Build profile containter                    */
+/*==============================================*/
+  .page-content-profile-container {
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    position: absolute;
+    background: transparent;
+    top: 0;
+    padding: 60px;
+    color: white;
+  }
+
+
+
+
+/*==============================================*/
+/*  Build profile containter Top side           */
+/*==============================================*/
+  .page-content-top-side {
+    width: 90%;
+    height: 100px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    position: absolute;
+    top: 40px;
+    left: 60px;
+  }
+
+  .page-content-social {
+    display: table;
+  }
+
+  .page-content-social ul {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+  }
+  .page-content-social-label {
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .page-content-social-icons-list, .page-content-social-label {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .page-content-social ul li {
+    list-style-type: none;
+    margin: 0 4px 0 0;
+    padding: 0;
+    border: 1px solid rgba(0,0,0,.1);
+    font-size: 11px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,.2);
+  }
+
+  .page-content-social ul li a {
+    display: block;
+    width: 36px;
+    height: 52px;
+    text-align: center;
+    color: inherit;
+  }
+
+  .fa-facebook, .fa-twitter, .fa-google-plus {
+    margin-top: 17px;
+    font-size: 15px;
+    line-height: 15px;
+    opacity: .5;
+    transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+   }
+  .page-content-social ul li a:hover .fa-facebook, .page-content-social ul li a:hover .fa-twitter, .page-content-social ul li a:hover .fa-google-plus {
+    opacity: 1;
+    color: #25b5f1;
+    transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+  }
+
+
+
+
+
+/*==============================================*/
+/*  Build profile containter Middle Site        */
+/*==============================================*/
+  .page-content-middle-side {
+    height: 100%;
+    width: 100%;
+    display: table;
+  }
+
+  .page-content-developer-name {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .page-content-middle-side h1 {
+    display: table-cell;
+    font-size: 55px;
+    font-weight: 100;
+  }
+  .page-content-middle-side h5 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  /*==============================================*/
+  /*  Overide btn bootstrap framwork              */
+  /*==============================================*/
+    .btn {
+      margin-top: 20px;
+      color: inherit;
+      font-size: 11px;
+      font-weight: 500;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      border: none;
+      padding: 18px 20px;
+      margin-bottom: 3px;
+    }
+
+    .btn-default {
+      background: 0 0;
+      border: 1px solid rgba(255,255,255,.2);
+      color: white;
+    }
+
+    .btn-default:hover {
+      border: 1px solid rgba(255,255,255,.5);
+      background: transparent;
+      color: #fff;
+    }
+
+    .is-blue {
+      background-color: #3276b1;
+    }
+    .is-black {
+      background-color: #333;
+    }
+
+    .is-blue:hover{
+      background-color: #07a2e2;
+      border: 1px solid #07a2e2;
+    }
+
+
+
+
+
+/*==============================================*/
+/*  Build profile containter Bottom side        */
+/*==============================================*/
+  .page-content-bottom-side {
+    width: 90%%;
+    border-top: 1px solid rgba(255,255,255,.2);
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+  }
+  .page-content-communication {
+    height: 75px;
+    vertical-align: bottom;
+    display: table;
+  }
+
+  .page-content-communication-list {
+    font-family: "Helvetica Neue",Raleway,Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    outline-style: none;
+    padding: 0;
+    margin: 0;
+    display: table-cell;
+    vertical-align: bottom;
+
+  }
+  .page-content-communication-list li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .icon-custom {
+    color: #25b5f1;
+    margin: 0 5px;
+    font-size: 16px;
+  }
