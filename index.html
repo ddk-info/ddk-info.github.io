@@ -1,402 +1,782 @@
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
 
-  <!-- Title -->
-  <title>Doungdara Keut - Information</title>
+<!-- Title -->
+<title>Doungdara Keut - Information</title>
 
-  <!-- Meta -->
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta http-equiv="Cache-control" content="public">
-  <meta name="viewport" content="width=1280, initial-scale=1.0">
-  <meta name="description" content="Moje. - Responsive One-Page Bootstrap vCard Template.">
-  <meta name="keywords" content="moje, responsive, one page, resume, bootstrap, vCard, personal page, html5, css3, retina">
-  <meta name="author" content="Suelo">
+<!-- Meta -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Cache-control" content="public">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Moje. - Responsive One-Page Bootstrap vCard Template.">
+<meta name="keywords" content="moje, responsive, one page, resume, bootstrap, vCard, personal page, html5, css3, retina">
+<meta name="author" content="Suelo">
 
-  <link rel="shortcut icon" href="images/favicon.png">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<link rel="shortcut icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!-- Masonry -->
-  <script src="vendor/plugins/masonry/masonry.pkgd.js"></script>
-  <script src="vendor/plugins/scrollTo/jquery-scrollto.js"></script>
-  <!-- Bootstrap -->
-  <script src="vendor/twitter-bootstrap/js/bootstrap.min.js"></script>
-  <!-- ScrollTo -->
-  <script src="vendor/plugins/masonry/imagesloaded.pkgd.js"></script>
-  <script src="app/javascripts/application.js"></script>
-  
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="vendor/twitter-bootstrap/css/bootstrap.min.css">
-  <!-- Latest compiled font-aswsome     -->
-  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="app/stylesheets/application.css">
+<!-- Retina Images -->
+<script>if((window.devicePixelRatio===undefined?1:window.devicePixelRatio)>1)
+    document.cookie='HTTP_IS_RETINA=1;path=/';</script>
+<!-- End Retina Images -->
 
+<!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500' rel='stylesheet' type='text/css'>
 
-  <!-- Google Web Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,700,500' rel='stylesheet' type='text/css'>
+<!-- Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/animations.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="css/style.min.css" />
+<link rel="stylesheet" type="text/css" href="colors/blue.css" id="colors" />
+<link rel="stylesheet" type="text/css" href="css/section-resume.css" />
+
 </head>
 
 <body>
-    <header id="nav-content" class="nav-content">
 
-    <!-- Logo -->
-    <div class="nav-content-logo">
-        <a href="#profile"><img src="app/images/my-photo.jpg" alt=""></a>
-      </div>
 
-      <!-- Navigation -->
-      <ul class="nav-content-list nav">
-        <li class="nav-item" id="profile"><a href="#profile"><span>Profile</span><i scroll="profile" class="glyphicon glyphicon-user active"></i></a></li>
-        <li class="nav-item" id="resume"><a href="#resume"><span>Resume</span><i scroll="resume" class="glyphicon glyphicon-pencil"></i></a></li>
-        <li class="nav-item" id="portfolio"><a href="#portfolio"><span>Portfolio</span><i scroll="porfolio" class="glyphicon glyphicon-picture"></i></a></li>
-        <li class="nav-item" id="blog"><a href="#blog"><span>Latest Posts</span><i scroll="blog" class="glyphicon glyphicon-comment"></i></a></li>
-        <li class="nav-item" id="contact"><a href="#contact"><span>Contact</span><i scroll="contact" class="glyphicon glyphicon-earphone"></i></a></li>
-        <!-- <li class="nav-item"><a href="components.html"><span>Components</span><i class="glyphicon glyphicon-flash"></i></a></li> -->
-      </ul>
+<!-- Loader -->
+<div id="page-loader">  </div>
+<!-- Loader / End -->
 
-      <!-- Copyright -->
-      <span class="copyright hidden-md">© 2014 <strong>Doungdara Keut</strong>.</span>
+<!-- Header  -->
+<header id="nav-content" class="vertical-nav nav-white">
 
-  </header>
+  <!-- Logo -->
+  <div class="my-logo">
+      <a href="#profile"><img src="images/my-photo.jpg" alt="" /></a>
+    </div>
+    
+    <!-- Navigation -->
+    <ul class="menu nav me-nav">
+      <li class="menu-item active"><a href="#profile"><span>Profile</span><i class="fa fa-user"></i></a></li>
+        <li class="menu-item"><a href="#resume"><span>Resume</span><i class="fa fa-pencil"></i></a></li>
+        <li class="menu-item"><a href="#portfolio"><span>Portfolio</span><i class="fa fa-desktop"></i></a></li>
+        <!-- <li class="menu-item"><a href="#blog"><span>Latest Posts</span><i class="fa fa-comment"></i></a></li> -->
+        <li class="menu-item"><a href="#contact"><span>Contact</span><i class="fa fa-phone"></i></a></li>
+        <!-- <li class="menu-item"><a href="components.html"><span>Components</span><i class="fa fa-bolt"></i></a></li> -->
+    </ul>
+    
+    <!-- Copyright -->
+    <span class="copyright hidden-md" > © 2015 <b>Doungdara Keut</b>.</span>
 
-  <div id="page-content">
-    <!-- Profile -->
-    <section id="profile" class="page-content-black page-content-profile">
-      <img src="app/images/backgrounds/profile-bg-a.jpg" alt="" class="too-slim">
-      <div class="page-content-profile-container">
-        <div class="page-content-top-side">
-          <div class="pull-left page-content-social">
-              <span class="hiddend-sm hidden-xs page-content-social-label">Check my social media! &nbsp; &nbsp; </span>
-                <ul class="page-content-social-icons-list si-pull-up">
-                  <li><a href="https://www.linkedin.com/pub/doungdara-keut/a8/b68/897/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://www.facebook.com/doungdara.challenge"            target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/twdoungdara"                         target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="https://plus.google.com/110026092726784890051/posts"     target="_blank"><i class="fa fa-google-plus"></i></a></li>
+</header>
+<!-- Header / End -->
+
+<!-- Page Content -->
+<div id="page-content">
+
+  <!-- Profile -->
+  <section id="profile" class="black">
+    
+      <!-- Background photo -->
+      <div id="profile-bg" class="editable-alpha" data-alpha="40"><img src="images/backgrounds/profile-bg.jpg" alt="" /></div>
+    
+      <div class="content padded dark">
+        
+          <!-- Top Bar -->
+          <div class="top-bar">
+            
+              <!-- Social media -->
+              <div class="pull-left">
+                  <span class="hiddend-sm hidden-xs">Check my social media! &nbsp; &nbsp; </span>
+                    <ul class="social-icons si-pull-up">
+                        <li><a href="https://www.linkedin.com/pub/doungdara-keut/a8/b68/897/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/doungdara.challenge"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/twdoungdara"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/110026092726784890051?rel=author"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://github.com/doungdara"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+                
+                <!-- URL -->
+                <div class="pull-right">
+                  <a href="#" class="hidden-xs">www.khmerunique.com</a>
+                </div>
+                
+            </div>
+        
+      <!-- Profile Content -->
+            <div class="profile-content">
+              <h1 class="short">Doungdara Keut</h1>
+                <h5>I am <span class="text-primary">proffessional</span> Web/DB Developer and Software Engineer Full Stack Achitecture building Enterprise-Level Applications as well as websites for the Small Business Owner.</h5>
+                <a class="btn btn-primary" href="mailto:doungdara.keut@gmail.com">Hire Me!</a> <a href="#contact" class="btn btn-default">Contact me</a>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="bottom-bar profile-bottom-bar hidden-xs">
+            
+              <!-- Contact List -->
+                <ul class="list-inline">
+                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>Home No. 215, Charles de Gaulle - Street 217, Group 1, Sangkat Orrusey II, Khan 7Makara, Phnom Penh Cambodia</li>
+                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="#">doungdara.keut@gmail.com</a></li>
+                  <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>+855 (15) 822555</li>
                 </ul>
-          </div>
-        </div>
-
-        <div class="page-content-middle-side">
-          <div class="page-content-developer-name">
-            <h1>Doungdara Keut</h1>
-            <h5>I am <span class="text-primary">Web</span>Developer &amp; <span class="text-primary">Web</span>Designer with Front-end and Back-end as my experience . . .</h5>
-            <a href="#contact" class="btn btn-default is-blue">More Information</a>
-            <a href="#contact" class="btn btn-default is-overlay">Contact me</a>
-          </div>
-        </div>
-
-        <div class="page-content-bottom-side">
-          <div class="page-content-communication">
-            <ul class="page-content-communication-list">
-              <li><i class="fa fa-map-marker icon-custom "></i>Home No. 215, Charles de Gaulle - Street 217, Group 1, Sangkat Orrusey II, Khan 7Makara, Phnom Penh Cambodia</li>
-              <li><i class="fa fa-comment icon-custom "></i>doungdara.keut@gmail.com</li>
-              <li><i class="fa fa-phone icon-custom "></i>+855 (70) 916191</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+             
+            </div>
+                    
+        </div>      
+        
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Profile / End -->
+    
     <!-- Resume -->
-    <section id="resume">
-      <div class="resume-collection">
-        <div class="row clearfix" id="masonry-js">
+  <section id="resume">
+    
+      <div class="content dimmed-effect padded-short">
           
-          <!-- About me -->
-          <div class="col-lg-4 item">
-            <div class="resume-item">
-              <i class="fa fa-comment-o text-color-is-cyan text-is-large"></i>
-              <h3>Who am I?</h3>
-              <div class="resume-item-about-me">
-                I am agile practitioner, Ruby On Rails and Pair Programming, TDD/BDD, Design Principles. I hold Joomla PHP in the past. I have been working on Ruby since Rails 3.0, During the last 2 years I have worked extensively on Ruby on Rails projects of varying complexity. Ruby on Rails becomes my primary development tool and I really love doing it. I have some experiences on developing Single Page Application with Ruby On Rails Framework, Jerkyll, Static web generator I have started working with multiple themes project by using ROR, I am willing to help people to share my knowledge to other by pairing say #letpairwithME with random people as my hobby.
-              </div>
-              <blockquote class="resume-item-description">
-                The bearing of a child takes nine months, no matter how many women are assigned. Many software tasks have this characteristic because of the sequential nature of debuggin. Challeng Everything !
-              </blockquote>
-              <p></p>
-            </div>
-          </div>
-          <!-- My Specialies -->
-          <div class="col-lg-4 item">
-            <div class="resume-item">
-              <i class="fa fa-laptop text-color-is-light-green text-is-large"></i>
-              <h3>My Specialities</h3>
+            <div class="row">
+            
+              <div class="col-lg-4">
               
-              <!-- Speciality -->
-              <div class="resume-item-speciality-skill">
-                <i class="fa fa-globe text-color-is-light-green pull-left text-is-medium"></i>
-                <div class="speciality-skill-content">
-                  <h5 class="speciality-skill-title">Web design</h5>
-                  <p class="speciaity-skill-description">is the process of creating websites. It encompasses several different aspects, including webpage layout, ...</p>
+                <!-- Box - About Me -->
+                <div class="resume-box animated slide-in-top">
+                  <i class="fa fa-comment-o text-color-is-cyan text-is-large"></i>
+                  <h3>Who am I?</h3>
+                  <!-- <p class="lead">Sed porttitor nulla eget enim gravida blandit. Integer risus nunc, molestie a nibh in, interdum fringilla urna. </p> -->
+                  <p>I'm a Web/DB Developer Base on Ruby On Rails and ASP.NET, I always love learning and researching for the new things, I have done with Ruby On Rails and Pair programming, I hold Joomla PHP in the past. I Like Coding, blogging, and sharing my knowledge to the people very much. I have been working on #Ruby, #rails, #Javascripts, SASS, Haml. During the last 1 Year I have worked extensively on Ruby on Rails.Ruby on Rails becomes my primary development tool and I really love doing it. I have some experiences on developing Single Page Application with Ruby On Rails Framework, Jerkyll, Static web generator I have started working with multiple themes project by using ROR. I am willing to help people to share my knowledge to other by pairing with random people as my hobby.</p>
+                  <p> Find more about my professional career at <a href="https://www.linkedin.com/profile/view?id=AAMAABbz5PMB2bWuFfc0LW77_dhbLgnVInttSn4&trk=hp-identity-name"><strong>LinkedIn</strong></a>, follow me on Twitter, <a href="https://twitter.com/twdoungdara"><strong>@doungdara</strong></a>, check me out at <a href="https://github.com/doungdara"><strong>Github</strong></a>.</p>
+                  <a href="#portfolio" class="btn btn-black">See my portfolio</a> <a href="#contact" class="btn btn-default">Contact me</a>
                 </div>
-              </div>
-              <!-- Speciality -->
-              <div class="resume-item-speciality-skill">
-                <i class="fa fa-list-alt text-color-is-light-green pull-left text-is-medium"></i>
-                <div class="speciality-skill-content">
-                  <h5 class="speciality-skill-title">Front-End Web Development</h5>
-                  <p class="speciaity-skill-description">is a broad term for the work involved in developing a web site for the Internet or an intranet. ...</p>
+                
+                <!-- Box - Skills & Attributes -->
+                <div class="resume-box animated slide-in-left appear-second">
+                  <i class="fa fa-book text-green text-is-large"></i>
+                  <h3>Skills &amp; Attributes</h3>
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">Adobe Photoshop</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                    </div>
+                  </div>
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">Adobe Dreamweaver</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                    </div>
+                  </div>
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">HTML/CSS</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                    </div>
+                  </div>
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">jQuery</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-off"></div>
+                    </div>
+                  </div>
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">Ruby</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                    </div>
+                  </div>
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">Ruby On Rails</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                    </div>
+                  </div>
+
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">PHP</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-off"></div>
+                    </div>
+                  </div>
+
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">Joomla!</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-off"></div>
+                    </div>
+                  </div>
+
+
+                  <!-- Sinlge skill -->
+                  <div class="skill">
+                    <span class="skill-name">Wordpress</span>
+                    <div class="skill-bar sb-green">
+                      <div class="skill-rate-on"></div>
+                      <div class="skill-rate-off"></div>
+                      <div class="skill-rate-off"></div>
+                      <div class="skill-rate-off"></div>
+                    </div>
+                  </div>
                 </div>
+                
               </div>
-              <!-- Speciality -->
-              <div class="resume-item-speciality-skill">
-                <i class="fa fa-pie-chart text-color-is-light-green pull-left text-is-medium"></i>
-                <div class="speciality-skill-content">
-                  <h5 class="speciality-skill-title">Back-End Web Development</h5>
-                  <p class="speciaity-skill-description">is a type of computer programmer who creates the logical back-end and core computational logic of a website, software or information system...</p>
+              
+              <div class="col-md-6 col-lg-4">
+              
+                <!-- Box - Specialities -->
+                <div class="resume-box animated slide-in-right">
+                  <i class="fa fa-laptop text-color-is-light-green text-is-large"></i>
+                  <h3>My Specialities</h3>
+                  <!-- Speciality -->
+                  <div class="speciality">
+                    <i class="fa fa-globe text-color-is-light-green pull-left text-is-medium"></i>
+                    <div class="speciality-content">
+                      <h5 class="short">Web design</h5>
+                        <p class="speciaity-description">is the process of creating websites. It encompasses several different aspects, including webpage layout, ...</p>
+                    </div>
+                  </div>
+                  <!-- Speciality -->
+                  <div class="speciality">
+                    <i class="fa fa-list-alt text-color-is-light-green pull-left text-is-medium"></i>
+                    <div class="speciality-content">
+                      <h5 class="short">Front-End Web Development</h5>
+                        <p class="speciaity-description">is a broad term for the work involved in developing a web site for the Internet or an intranet. ....</p>
+                    </div>
+                  </div>
+                  <!-- Speciality -->
+                  <div class="speciality">
+                    <i class="fa fa-pie-chart text-color-is-light-green pull-left text-is-medium"></i>
+                    <div class="speciality-content">
+                      <h5 class="short">Back-End Web Development</h5>
+                        <p class="speciaity-description">is a type of computer programmer who creates the logical back-end and core computational logic of a website, software or information system...</p>
+                    </div>
+                  </div>
+
+                  <!-- Speciality -->
+                  <div class="speciality">
+                    <i class="fa fa-tablet text-color-is-light-green pull-left mobile-custom"></i>
+                    <div class="speciality-content">
+                      <h5 class="short">Responsive Web Design</h5>
+                        <p class="speciaity-description">Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones).</p>
+                    </div>
+                  </div>
+
                 </div>
-              </div>
-              <!-- Speciality -->
-              <div class="resume-item-speciality-skill">
-                <i class="fa fa-mobile text-color-is-light-green pull-left text-is-medium"></i>
-                <div class="speciality-skill-content">
-                  <h5 class="speciality-skill-title">App Design</h5>
-                  <p class="speciaity-skill-description">Great, modern website designes.</p>
+                
+                <!-- Box - Education & Jobs -->
+                <div class="resume-box animated slide-in-left">
+                  <i class="fa fa-university text-color-is-blue text-is-large"></i>
+                  <h3>Job Experiences</h3>
+                  <div class="resume-item-education">
+
+                    <!-- Smart Internet Class -->
+                    <div class="education-event is-blue-dot">
+                      <div class="event-date">Creative Entertainment Ltd - Present </div>
+                      <div class="event-name">International Software for Entertainment </div>
+                      <div class="event-description">Creative Entertainment Ltd, specializes in the creation of online entertainment. Creative Entertainment is led by a management team with wide-ranging expertise and decades of international experience</div>
+                      
+                      <a href="http://www.creativeentertainmentltd.com/">www.creativeentertainmentltd.com</a>
+                    </div>
+
+                    <!-- Smart Internet Class -->
+                    <div class="education-event is-blue-dot">
+                      <div class="event-date">Yoolk.Inc </div>
+                      <div class="event-name">International Software Business Development</div>
+                      <div class="event-description">Our Yellow Pages software has helped thousands of businesses advertise online. Now we're offering you a way to maximize your online experience.. </div>
+                      
+                      <a href="http://yoolk.com/">www.yoolk.com</a> | <a href="https://groow.io/">www.groow.io</a>
+
+                    </div>
+
+                    <!-- ETON -->
+                    <div class="education-event is-blue-dot">
+                      <div class="event-date">International Education in Asia </div>
+                      <div class="event-name">EtonHouse International School</div>
+                      <div class="event-description">Head of Department Information Technologies - Raid server configuration, PABX, UPS, PPCTV configuration, Webmaster, Cisco Technologies.</div>
+                      
+                      <a href="http://www.ehis.co/">www.ehis.co/</a> 
+                    </div>
+                    <!-- BAT-->
+                    <div class="education-event is-blue-dot">
+                      <div class="event-date">World's Most International Tobacco </div>
+                      <div class="event-name">British Tobacco Cambodia</div>
+                      <div class="event-description">IT-Helpdesk, Assistant IT Manager controlled server room, UPS, PABX, Avaya Phone call, Meeting Conference etc... </div>
+                      
+                      <a href="http://www.bat-cambodia.com/">www.bat-cambodia.com</a> 
+                    </div>
+
+                    <!-- Smart Internet Class -->
+                    <div class="education-event is-blue-dot">
+                      <div class="event-date">CEO Smart Internet Class </div>
+                      <div class="event-name">Modern Intenet Cafee - Phnom Penh</div>
+                      <div class="event-description">Provide Services internet cafee, can meeting neighborhood gaming and IT needs. Make internet PC accessible to everyone and make technology fun. Meeting area, Consultant Area. </div>
+                    </div>
+                  </div>
                 </div>
+                
               </div>
+              
+              <div class="col-md-6 col-lg-4">
+              
+                <!-- Box - Languages -->
+                <div class="resume-box animated slide-in-right appear-second">
+                  <i class="fa fa-graduation-cap text-color-is-orange text-is-large"></i>
+                  <h3>My Educations</h3>
+                  <div class="resume-item-education">
+
+                    <!-- Singapore  -->
+                    <div class="education-event is-orange-dot">
+                      <div class="event-date">Class of 2012</div>
+                      <div class="event-name">School of Electrical &amp; Electronic Engineering</div>
+                      <div class="event-description">(CONVERSION) IN COMPUTER CISCO NETWORKING.</div>
+                      <blockquote class="education-event-quote">Advanced Access Control Lists, Extended ACL Concepts, Ethernet Type Code Ethernet Address DECnet and Extended DECnet</blockquote>
+                    </div>
+
+                    <!-- Royal University -->
+                    <div class="education-event is-orange-dot">
+                      <div class="event-date">Class of 2011 </div>
+                      <div class="event-name">Royal University of Phnom Penh</div>
+                      <div class="event-description">Bachelor's degree of Computer Science and Enginering · Phnom Penh, Cambodia.</div>
+                      <blockquote class="education-event-quote">* Computer networking configuration server &amp; client OS window 2003, 2008, Fedora, Cent Os, Samba * Setup System Internet Cafe, Tinasoft Customize. * Client Server for user authentication, control user time period. * Develop static website and CMS Joomla! * Sample Website, PHP, Joomla! framework</blockquote>
+                    </div>
+
+                    <!-- Informatics -->
+                    <div class="education-event is-orange-dot">
+                      <div class="event-date">Class of 2010</div>
+                      <div class="event-name">Informatics Academy singapore</div>
+                      <div class="event-description">International Advance Diploma in Business Systems Development</div>
+                      <blockquote class="education-event-quote">The Advanced Diploma in Business System Development provides students with strong academic knowledge and skills in system software development which includes analysis, design, documentation, implementation, and program testing. The course has been developed to meet the professional and academic needs of graduates of the International Diploma in Information Technology and Communication in order that they may have a common knowledge of the software development tools that will be used to support their works.</blockquote>
+                    </div>
+
+                    <!-- Single event -->
+                    <div class="education-event is-orange-dot">
+                      <div class="education-event-date">Class of 2006 · Cambodia</div>
+                      <div class="education-event-name">Zaman International School</div>
+                      <div class="education-event-description">DIPLOMA:  Zaman International School (ZIS) is a private multilingual international school in Cambodia's Capital Phnom Penh</div>
+                      <blockquote class="education-event-quote">High School Diploma, 12 A Class Murat Tutumlu, Osman Karaja. Activities and Societies: Class of 2006 · Istanbul, Turkey European Council of International Schools International High School Diploma 01 July 2006</blockquote>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
             </div>
-          </div>
-
-
-
-
-          <!-- Education -->
-          <div class="col-lg-4 item">
-            <div class="resume-item">
-              <i class="fa fa-graduation-cap text-color-is-orange text-is-large"></i>
-              <h3>My Educations</h3>
-              <div class="resume-item-education">
-
-                <!-- Singapore  -->
-                <div class="education-event is-orange-dot">
-                  <div class="event-date">Class of 2012</div>
-                  <div class="event-name">School of Electrical & Electronic Engineering</div>
-                  <div class="event-description">(CONVERSION) IN COMPUTER CISCO NETWORKING.</div>
-                  <blockquote class= "education-event-quote">Advanced Access Control Lists, Extended ACL Concepts, Ethernet Type Code Ethernet Address DECnet and Extended DECnet</blockquote>
-                </div>
-
-                <!-- Royal University -->
-                <div class="education-event is-orange-dot">
-                  <div class="event-date">Class of 2011 </div>
-                  <div class="event-name">Royal University of Phnom Penh</div>
-                  <div class="event-description">Bachelor's degree of Computer Science and Enginering · Phnom Penh, Cambodia.</div>
-                  <blockquote class= "education-event-quote">* Computer networking configuration server & client OS window 2003, 2008, Fedora, Cent Os, Samba * Setup System Internet Cafe, Tinasoft Customize. * Client Server for user authentication, control user time period. * Develop static website and CMS Joomla! * Sample Website, PHP, Joomla! framework</blockquote>
-                </div>
-
-                <!-- Informatics -->
-                <div class="education-event is-orange-dot">
-                  <div class="event-date">Class of 2010</div>
-                  <div class="event-name">Informatics Academy singapore</div>
-                  <div class="event-description">International Advance Diploma in Business Systems Development</div>
-                  <blockquote class= "education-event-quote">The Advanced Diploma in Business System Development provides students with strong academic knowledge and skills in system software development which includes analysis, design, documentation, implementation, and program testing. The course has been developed to meet the professional and academic needs of graduates of the International Diploma in Information Technology and Communication in order that they may have a common knowledge of the software development tools that will be used to support their works.</blockquote>
-                </div>
-
-                <!-- Single event -->
-                <div class="education-event is-orange-dot">
-                  <div class="education-event-date">Class of 2006 · Cambodia</div>
-                  <div class="education-event-name">Zaman International School</div>
-                  <div class="education-event-description">DIPLOMA:  Zaman International School (ZIS) is a private multilingual international school in Cambodia's Capital Phnom Penh</div>
-                  <blockquote class= "education-event-quote">High School Diploma, 12 A Class Murat Tutumlu, Osman Karaja. Activities and Societies: Class of 2006 · Istanbul, Turkey European Council of International Schools International High School Diploma 01 July 2006</blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-
-
-
-
-
-
-
-
-
-
-          <div class="col-lg-4 item">
-            <div class="resume-item">
-              <i class="fa fa-book text-color-is-light-red text-is-large"></i>
-              <h3>Skills &amp; Attributes</h3>
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">Adobe Photoshop</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                </div>
-              </div>
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">Adobe Dreamweaver</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                </div>
-              </div>
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">HTML/CSS</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                </div>
-              </div>
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">jQuery</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-off"></div>
-                </div>
-              </div>
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">Ruby</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                </div>
-              </div>
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">Ruby On Rails</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                </div>
-              </div>
-
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">PHP</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-off"></div>
-                </div>
-              </div>
-
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">Joomla!</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-off"></div>
-                </div>
-              </div>
-
-
-              <!-- Sinlge skill -->
-              <div class="skill">
-                <span class="skill-name">Wordpress</span>
-                <div class="skill-bar slide-bar-light-red">
-                  <div class="skill-rate-on"></div>
-                  <div class="skill-rate-off"></div>
-                  <div class="skill-rate-off"></div>
-                  <div class="skill-rate-off"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-          <div class="col-lg-4 item">
-            <div class="resume-item">
-              <i class="fa fa-university text-color-is-blue text-is-large"></i>
-              <h3>Job Experiences</h3>
-              <div class="resume-item-education">
-
-                <!-- Smart Internet Class -->
-                <div class="education-event is-blue-dot">
-                  <div class="event-date">Yoolk.Inc - Present </div>
-                  <div class="event-name">International Software Business Development</div>
-                  <div class="event-description">Our Yellow Pages software has helped thousands of businesses advertise online. Now we're offering you a way to maximize your online experience.. </div>
-                </div>
-
-                <!-- ETON -->
-                <div class="education-event is-blue-dot">
-                  <div class="event-date">International Education in Asia </div>
-                  <div class="event-name">EtonHouse International School</div>
-                  <div class="event-description">Head of Department Information Technologies - Raid server configuration, PABX, UPS, PPCTV configuration, Webmaster, Cisco Technologies.</div>
-                </div>
-
-                <!-- BAT-->
-                <div class="education-event is-blue-dot">
-                  <div class="event-date">World's Most International Tobacco </div>
-                  <div class="event-name">British Tobacco Cambodia</div>
-                  <div class="event-description">IT-Helpdesk, Assistant IT Manager controlled server room, UPS, PABX, Avaya Phone call, Meeting Conference etc... </div>
-                </div>
-
-                <!-- Smart Internet Class -->
-                <div class="education-event is-blue-dot">
-                  <div class="event-date">CEO Smart Internet Class </div>
-                  <div class="event-name">Modern Intenet Cafee - Phnom Penh</div>
-                  <div class="event-description">Provide Services internet cafee, can meeting neighborhood gaming and IT needs. Make internet PC accessible to everyone and make technology fun. Meeting area, Consultant Area. </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
+            
         </div>
-      </div>
+    
     </section>
-  </div>
+    <!-- Resume / End -->
+    
+    <!-- Portfolio -->
+    <section id="portfolio" style="padding-top: 50px; padding-bottom: 50px;">
+    
+      <!-- Projects Holder -->
+      <div class="projects-holder black dark clearfix">
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in">
+            <div class="project-image" style="height: 400px; overflow: hidden;">
+                <img src="images/portfolio/project_01.png" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Mika Audio</div>
+                <div class="project-caption text-blue">Webdesgin</div>
+                <div class="project-buttons"><a href="http://mika-audio-iwlabs.yoolk.com/?color=violet" class="btn btn-blue btn-sm">View it</a> </div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in appear-third">
+            <div class="project-image" style = "height: 400px; overflow: hidden;">
+                <img src="images/portfolio/project_02.png" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Yooka Shot Cemare Shop</div>
+                <div class="project-caption text-yellow">Webdesgin / Webdevelopment</div>
+                <div class="project-buttons"><a href="http://yooka-shot-camera-shop-iwlabs.yoolk.com/" class="btn btn-yellow btn-sm">View it</a> </div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in appear-second">
+            <div class="project-image" style = "height: 400px; overflow: hidden;">
+                <img src="images/portfolio/project_03.png" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Home Growns Furniture</div>
+                <div class="project-caption text-green">Webdesgin / Webdevelopment</div>
+                <div class="project-buttons"><a href="http://homegrowns-furniture-iwlabs.yoolk.com/?color=blue" class="btn btn-green btn-sm">View it</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in appear-fourth">
+            <div class="project-image" style = "height: 400px; overflow: hidden;">
+                <img src="images/portfolio/project_04.png" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Vets Pets Lovely</div>
+                <div class="project-caption text-red">Webdesgin / Webdevelopment</div>
+                <div class="project-buttons"><a href="http://vets-petslovely-iwlabs.yoolk.com/?color=green" class="btn btn-red btn-sm">View it</a> </div>
+              </div>
+            </div>
+          </div>
 
-  <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
-  <!-- Land -->
-  <!--<ins class="adsbygoogle"-->
-  <!--     style="display:inline-block;width:728px;height:90px"-->
-  <!--     data-ad-client="ca-pub-5139915950631827"-->
-  <!--     data-ad-slot="9735492999"></ins>-->
-  <!--<script>-->
-  <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
-  <!--</script>-->
+
+
+
+
+
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in">
+            <div class="project-image" style="height: 210px; overflow: hidden;">
+                <img src="images/portfolio/project_05.png" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Mika Audio</div>
+                <div class="project-caption text-blue">Webdesgin / Mobile Responsive</div>
+                <div class="project-buttons"><a href="http://mika-audio-iwlabs.yoolk.com/?color=violet" class="btn btn-blue btn-sm">View it</a> </div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in appear-third">
+            <div class="project-image" style = "height: 210px; overflow: hidden;">
+                <img src="images/portfolio/project_06.png" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Yooka Shot Cemare Shop</div>
+                <div class="project-caption text-yellow">Webdesgin / Mobile Responsive</div>
+                <div class="project-buttons"><a href="http://yooka-shot-camera-shop-iwlabs.yoolk.com/" class="btn btn-yellow btn-sm">View it</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in appear-second">
+            <div class="project-image" style = "height: 210px; overflow: hidden;">
+                <img src="images/portfolio/project_07.png" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Home Growns Furniture</div>
+                <div class="project-caption text-green">Webdesgin / Mobile Responsive</div>
+                <div class="project-buttons"><a href="http://homegrowns-furniture-iwlabs.yoolk.com/?color=blue" class="btn btn-green btn-sm">View it</a> </div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Project --> 
+          <div class="single-project animated fade-in appear-fourth">
+            <div class="project-image" style = "height: 210px; overflow: hidden;">
+                <img src="images/portfolio/project_08.png" alt="" />
+            </div>
+            <div class="project-mask">
+              <div class="project-info">
+                <div class="project-title">Vets Pets Lovely</div>
+                <div class="project-caption text-red">Webdesgin / Mobile Responsive</div>
+                <div class="project-buttons"><a href="http://vets-petslovely-iwlabs.yoolk.com/?color=green" class="btn btn-red btn-sm">View it</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Ajax Project Details -->
+        <div class="project-content"></div>
+        
+    </section>
+    <!-- Portfjolo / End -->
+    
+
+<hr>
+    <!-- Blog -->
+<!--     <section id="blog">
+    
+      <div class="content padded">
+        
+          <div  class="row">
+          
+            <div class="col-lg-12">
+             
+              <div class="post-carousel animated slide-in-top">
+                <article class="post post-carousel-item">
+                    <div class="post-image"><img src="images/blog/post_01.jpg" alt="" /></div>
+                    <div class="post-content-holder">
+                        <div class="post-content">
+                            <div class="post-info clearfix">
+                                <span class="post-date">22 May, 2014</span>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <h3><a href="single-post.html">Awesome Seattle Cycle Trip</a></h3>
+                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="post post-carousel-item">
+                    <div class="post-image"><img src="images/blog/post_02.jpg" alt="" /></div>
+                    <div class="post-content-holder">
+                        <div class="post-content">
+                            <div class="post-info clearfix">
+                                <span class="post-date">22 May, 2014</span>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <h3><a href="single-post.html">Brand New PC</a></h3>
+                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="post post-carousel-item">
+                    <div class="post-image"><img src="images/blog/post_03.jpg" alt="" /></div>
+                    <div class="post-content-holder">
+                        <div class="post-content">
+                            <div class="post-info clearfix">
+                                <span class="post-date">22 May, 2014</span>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <h3><a href="single-post.html">To be or not to be?</a></h3>
+                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="post post-carousel-item">
+                    <div class="post-image"><img src="images/blog/post_04.jpg" alt="" /></div>
+                    <div class="post-content-holder">
+                        <div class="post-content">
+                            <div class="post-info clearfix">
+                                <span class="post-date">22 May, 2014</span>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <h3><a href="single-post.html">New Software for my company</a></h3>
+                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="post post-carousel-item">
+                    <div class="post-image"><img src="images/blog/post_05.jpg" alt="" /></div>
+                    <div class="post-content-holder">
+                        <div class="post-content">
+                            <div class="post-info clearfix">
+                                <span class="post-date">22 May, 2014</span>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <h3><a href="single-post.html">Awesome Seattle Cycle Trip</a></h3>
+                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="post post-carousel-item">
+                    <div class="post-image"><img src="images/blog/post_06.jpg" alt="" /></div>
+                    <div class="post-content-holder">
+                        <div class="post-content">
+                            <div class="post-info clearfix">
+                                <span class="post-date">22 May, 2014</span>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <h3><a href="single-post.html">Brand new PC</a></h3>
+                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="post post-carousel-item">
+                    <div class="post-image"><img src="images/blog/post_07.jpg" alt="" /></div>
+                    <div class="post-content-holder">
+                        <div class="post-content">
+                            <div class="post-info clearfix">
+                                <span class="post-date">22 May, 2014</span>
+                                <div class="post-meta">
+                                    <span><i class="fa fa-comment"></i><a href="#">4 comments</a></span>
+                                    <span><i class="fa fa-tag"></i><a href="#">Webdesign</a></span>
+                                </div>
+                            </div>
+                            <div class="post-text">
+                                <h3><a href="single-post.html">To be or not to be?</a></h3>
+                                <p class="lead">Per sint eirmod expetenda te. Pro ne essent.</p>
+                                <p>Per ea tibique fabellas electram. Ea aliquam corpora vis. Ne quot civibus atomorum quo. </p>
+                                <a href="single-post.html" class="btn btn-primary btn-sm">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+              </div> 
+               
+              <div class="end-of-section">
+          
+                <div class="pull-left">
+                  <span class="hiddend-sm hidden-xs">Would you like to check all of my posts? &nbsp; &nbsp;</span><a href="blog-page.html" class="btn btn-black btn-sm">Check my Blog Page!</a>
+                </div>
+                 
+                <div class="post-carousel-control">
+                  <a class="post-carousel-prev" href="#">Previous</a>
+                  <a class="post-carousel-next" href="#">Next</a>
+                </div>
+              
+              </div>
+                
+            </div>
+          
+          </div>
+            
+        </div>
+        
+    </section> -->
+    <!-- Blog / End -->
+    
+    <!-- Contact -->
+    <section id="contact" class="black">
+    
+      <!-- Google Map -->
+      <div id="google-map" class="animated zoom-out"></div>
+        
+        <!-- Contact Content -->
+        <div class="content contact-content padded dark animated slide-in-left">
+          <i class="title-icon text-primary fa fa-home"></i>
+          <h2>Do you want to hire me?</h2>
+            <!-- Contact List -->
+            <ul class="list-unstyled list-unstyled-icons">
+              <li><i class="inline-icon icon-before-and-after text-primary fa fa-map-marker"></i>Home No. 215, Charles de Gaulle - Street 217,<br />Sangkat Orrusey II, Khan 7Makara,<br />Phnom Penh Cambodia</li>
+              <li><i class="inline-icon icon-before-and-after text-primary fa fa-comment"></i><a href="mailto:doungdara.keut@gmail.com">doungdara.keut@gmail.com</a></li>
+              <li><i class="inline-icon icon-before-and-after text-primary fa fa-phone"></i>+855 (15) 822555/li>
+            </ul>
+            <br/><br/>
+            <p><a href="#" class="btn btn-primary">Download my CV</a></p>
+            <!-- Bottom Bar -->
+            <div class="bottom-bar contact-bottom-bar">
+              <div class="row">
+                  <div class="col-md-12 col-lg-8">
+                      <h5>Check my social media!</h5>
+                        <!-- Social Icons -->
+                        <ul class="social-icons medium">
+                          <li><a href="https://www.linkedin.com/pub/doungdara-keut/a8/b68/897/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="https://www.facebook.com/doungdara.challenge"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="https://twitter.com/twdoungdara"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="https://plus.google.com/110026092726784890051?rel=author"><i class="fa fa-google-plus"></i></a></li>
+                          <li><a href="https://github.com/doungdara"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact / End -->
+  
+</div>
+<!-- Page Content / End -->
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/page-loader.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+<!-- Custom Script -->
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/GoogleMap-dark.js"></script>
+
+<!-- Styleswitcher -->
+<link rel="stylesheet" type="text/css" href="styleswitcher/styleswitcher.css" />
+<script type="text/javascript" src="styleswitcher/styleswitcher.js"></script>
+<!-- Styleswitcher / End -->
+
+<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+<!--
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+-->
+
 </body>
 
+</html>
