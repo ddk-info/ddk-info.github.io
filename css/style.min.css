@@ -12,3 +12,8 @@ html{overflow-x:hidden}body{color:#282828;overflow-x:hidden;font-size:12px;font-
     position: relative;
     left: 22px;
 }
+
+.fa-paper-plane {
+  color:  white !important;
+  margin-left: 6px;
+}
