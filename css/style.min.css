@@ -17,3 +17,7 @@ html{overflow-x:hidden}body{color:#282828;overflow-x:hidden;font-size:12px;font-
   color:  white !important;
   margin-left: 6px;
 }
+
+#myModal-khmerunique blockquote p {
+  font-size: 12px !important;  
+}
